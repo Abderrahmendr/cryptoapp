@@ -1,7 +1,7 @@
 
 //import logo from './logo.svg';
-//import './App.css';
-import Navbar from "./components/navbar"
+import './App.css';
+import {Navbar} from "./components"
 import { Layout, Typography, Space } from "antd";
 import {Switch, Route, Link} from 'react-router-dom'
  
@@ -10,7 +10,6 @@ import {Switch, Route, Link} from 'react-router-dom'
     <div className="app">
     <div className="navbar">
     
-      <h1>hello</h1>
       <Navbar/>
            
     </div>
