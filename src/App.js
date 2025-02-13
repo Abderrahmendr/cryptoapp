@@ -1,26 +1,32 @@
+import React from 'react';
+import {   Route, Link } from 'react-router-dom';
+import { Layout, Typography, Space } from 'antd';
 
-//import logo from './logo.svg';
+import { Navbar } from './components';
 import './App.css';
-import {Navbar} from "./components"
-import { Layout, Typography, Space } from "antd";
-import {Switch, Route, Link} from 'react-router-dom'
- 
- export default  function App() {
-  return (
-    <div className="app">
+
+const App = () => (
+  <div className="app">
     <div className="navbar">
-    
-      <Navbar/>
-           
+      <Navbar />
     </div>
     <div className="main">
-    
+      
+      <div className="footer">
+        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
+          <Link to="/">
+            Cryptoverse Inc.
+          </Link> <br />
+          All Rights Reserved.
+        </Typography.Title>
+        <Space>
+          <Link to="/">Home</Link>
+          <Link to="/ ">Exchanges</Link>
+          <Link to="/ ">News</Link>
+        </Space>
+      </div>
     </div>
-    <div className="footer">
-    
-    </div> 
-    </div>
-  );
-}
+  </div>
+);
 
- 
+export default App;
