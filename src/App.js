@@ -1,8 +1,8 @@
 import React from 'react';
-import {   Route, Link } from 'react-router-dom';
+import {Switch, Route,Routes, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 
-import { Navbar } from './components';
+import { Navbar, Homepage, Cryptocurrencies, CryptoDetails, Exchanges, News } from './components';
 import './App.css';
 
 const App = () => (
@@ -11,6 +11,17 @@ const App = () => (
       <Navbar />
     </div>
     <div className="main">
+      <Layout>
+        <div className="route">
+        <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/exchanges" element={<Exchanges />} />
+      <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
+      <Route path="/crypto/:coinsId" element={<CryptoDetails />} />
+      <Route path="/news" element={<News />} />
+    </Routes>
+        </div>
+      </Layout>
       
       <div className="footer">
         <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
