@@ -1,7 +1,7 @@
 import React ,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import millify from 'millify'
-import {card, row, col, input} from 'antd'
+import {card, Row, col, input} from 'antd'
 import { useGetCryptosQuery } from '../services/cryptoApi'
    
 
@@ -12,7 +12,11 @@ const Cryptocurrencies = () => {
 
   return (
     <div>
-      <p>cr</p>
+      <>
+        <Row gutters={[32, 32]} className="crypto-card-container">
+
+        </Row>
+      </>
     </div>
   )
 }
