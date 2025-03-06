@@ -3,7 +3,7 @@ import { Typography, Select, Row, Col, Avatar, Card } from 'antd';
 //import moment from moment;
  import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
 const {Text, Title} = Typography;
-const 
+const {option} = Select;
 
  const News = () => {
   return (
