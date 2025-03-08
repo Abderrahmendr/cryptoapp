@@ -5,7 +5,8 @@ import { Typography, Select, Row, Col, Avatar, Card } from 'antd';
 const {Text, Title} = Typography;
 const {option} = Select;
 
- const News = () => {
+ const News = ({simplified}) => {
+  const {data : cryptoNews} = useGetCryptoNewsQuery({newsCategory:'cryptocurrency', count})
   return (
     <div>
       <p>vh</p>
