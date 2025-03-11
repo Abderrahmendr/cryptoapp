@@ -18,10 +18,8 @@ const {option} = Select;
         <Col xs={24} sm={12} lg={8} key={i}>
           <Card hoverable className="news-card">
             <a href={news.url} target="_blank" rel="noreferrer">
-              <div className="news-image-container">
-                 <img src={news?.image?.thumbnail?.contentUrl } alt="" />
-              </div>
-               <div className="provider-container">
+               <div className="news-image-container">
+                <Title className = 'news-title' level={4}>{news.name}</Title>
         
               </div>
             </a>
