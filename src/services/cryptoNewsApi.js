@@ -16,7 +16,7 @@ export const cryptoNewsApi = createApi({
       query: ({ newsCategory, count }) => createRequest(`/news/search?q=${newsCategory}&safeSearch=Off&textFormat=Raw&freshness=Day&count=${count}`),
     
     }),
-    
   }),
 });
- export const { useGetCryptoNewsQuery } = cryptoNewsApi;
+
+export const { useGetCryptoNewsQuery } = cryptoNewsApi;
