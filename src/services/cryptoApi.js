@@ -22,4 +22,4 @@ export const cryptoApi = createApi({
   }),
 });
 
-export const { useGetCryptosQuery, useGetCryptoDetailsQuery } = cryptoApi;
+export   const { useGetCryptosQuery, useGetCryptoDetailsQuery } = cryptoApi;

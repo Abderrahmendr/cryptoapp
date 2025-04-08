@@ -6,6 +6,7 @@ import { Typography, Row, Col, Statistic } from 'antd'
 import {Cryptocurrencies, News} from '../components'
  
 const {Title} = Typography;
+
 const Homepage = () => {
 
   const {data, isFetching} = useGetCryptosQuery(10);
@@ -36,4 +37,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage
+export default Homepage;
